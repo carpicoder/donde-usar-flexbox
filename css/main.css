@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background-color: #1c1c1c;
+    color: #ececec;
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-inline: 1rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 0;
+    transition: .2s;
+    border-top-left-radius: 100vmax;
+    border-bottom-left-radius: 100vmax;
+}
+
+.logo {
+    width: 4rem;
+}
+
+.logo-header {
+    order: 1;
+    background-color: #1c1c1c;
+    padding: .5rem;
+}
+
+h1 {
+    font-size: 1rem;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: .3s;
+    pointer-events: none;
+}
+
+header:hover h1 {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+header:hover {
+    background-color: #1c1c1c;
+}
+
+.item img {
+    max-width: 8rem;
+}
+
+
+/*
+ ACÁ ARRANCA EL CONTENIDO AGREGADO EN EL VIDEO
+*/
+
+/** NAVBAR **/
+
+.navbar {
+    background-color: #ececec;
+    color: #1c1c1c;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+.navbar-2-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.navbar-2 {
+    display: flex;
+    column-gap: 1rem;
+    row-gap: 0;
+    flex-wrap: wrap;
+}
+
+/*** CARDS ***/
+
+.cards {
+    display: flex;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.card {
+    background-color: #ececec;
+    color: #1c1c1c;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.card p {
+    flex-grow: 1;
+}
+
+/*** FORM ELEMENTS ***/
+
+.form {
+    display: flex;
+}
+
+.input {
+    flex-grow: 1;
+    padding: .8rem;
+    border: 0;
+}
+
+.submit {
+    padding-inline: 1rem;
+    border: 0;
+    border-radius: 0;
+    background-color: #1c1c1c;
+    color: #ececec;
+    transition: .3s;
+}
+
+.submit:hover {
+    background-color: #ececec;
+    color: #1c1c1c;
+}
+
+
+/*** CENTER ELEMENTS ***/
+
+.center {
+    background-color: #ececec;
+    color: #1c1c1c;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*** GALLERY ***/
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
